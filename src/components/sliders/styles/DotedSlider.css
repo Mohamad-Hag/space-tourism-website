@@ -1,0 +1,49 @@
+.DotedSlider
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 50px;
+}
+.doted-slider-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 15px;    
+}
+.doted-slider-right
+{
+    
+}
+.doted-slider-dot
+{
+    height: 10px;
+    width: 10px;
+    background: #ffffff30;
+    border-radius: 50%;
+    transition: .5s;
+}
+.doted-slider-dot-active
+{
+    background-color: #ffffff;
+}
+@media screen and (max-width: 1100px) 
+{
+    body
+    {
+        min-height: 100vh;
+        height: initial;
+    }
+    .DotedSlider
+    {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }       
+    .doted-slider-left
+    {
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+}
